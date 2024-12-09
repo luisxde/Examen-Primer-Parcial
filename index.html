@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de los Videojuegos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>VideoJuegos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#juegos-iconicos">Juegos Icónicos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Explora la Evolución de los Videojuegos</h2>
+                <p>Desde sus inicios hasta los títulos más innovadores de la actualidad. ¡Bienvenido a la historia del gaming!</p>
+                <button onclick="scrollToSection('#historia')">Descubre más</button>
+            </div>
+            <img src="../Examen-Primer-Parcial/img/OIP (1).jpeg" alt="Consola retro">
+        </section>
+
+        <section id="historia" class="info-section">
+            <h2>La Historia de los Videojuegos</h2>
+            <p>Los videojuegos comenzaron en los años 50 como un experimento científico. Hoy, son una de las formas de entretenimiento más grandes del mundo.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Pong (1972)</h3>
+                    <p>Primer juego comercializado en la historia.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Super Mario Bros (1985)</h3>
+                    <p>Revolucionó los juegos de plataformas.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>PlayStation (1994)</h3>
+                    <p>Cambio el enfoque de los videojuegos a consolas más poderosas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="juegos-iconicos" class="iconic-games">
+            <h2>Juegos Icónicos</h2>
+            <div class="game-list">
+                <div class="game-item" onclick="showGameDetails('Super Mario Bros', 'Super Mario Bros es uno de los juegos más icónicos de todos los tiempos. Revolucionó los juegos de plataformas.')">
+                    <img src="../Examen-Primer-Parcial/img/OIP.jpeg" alt="Super Mario Bros">
+                    <h3>Super Mario Bros</h3>
+                </div>
+                <div class="game-item" onclick="showGameDetails('The Legend of Zelda', 'The Legend of Zelda es un juego de aventuras y acción que marcó un antes y un después en la industria de los videojuegos.')">
+                    <img src="../Examen-Primer-Parcial/img/th.jpeg" alt="The Legend of Zelda">
+                    <h3>The Legend of Zelda</h3>
+                </div>
+                <div class="game-item" onclick="showGameDetails('Halo', 'Halo es un juego de disparos en primera persona que se convirtió en una franquicia de gran éxito en el mundo de los videojuegos.')">
+                    <img src="../Examen-Primer-Parcial/img/descarga.jpeg" alt="Halo">
+                    <h3>Halo</h3>
+                </div>
+            </div>
+            <div id="game-details" class="game-details">
+                <h3 id="game-title"></h3>
+                <p id="game-description"></p>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Tu nombre">
+                <input type="email" placeholder="Tu correo">
+                <textarea placeholder="Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Luis Mario Díaz Calero | Proyecto Informativo</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
